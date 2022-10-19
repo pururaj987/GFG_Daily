@@ -1,5 +1,3 @@
-// 18 October , 2022
-
 // Print Diagonally
 // Give a N * N square matrix A, return all the elements of its anti-diagonals from top to bottom.
 
