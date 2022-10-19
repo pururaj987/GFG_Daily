@@ -5,7 +5,6 @@
 
 // SC - O(N*N)
 // TC - O(N*N)
-
 class Solution{
 	public:
 	vector<int> downwardDigonal(int N, vector<vector<int>> grid)
