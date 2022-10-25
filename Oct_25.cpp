@@ -51,17 +51,17 @@ class Solution
     }
 };
 
-Approach 2 - Use a doubly ended queue which is deque in c++ and allows insertion and deletion from both front and end.
+// Approach 2 - Use a doubly ended queue which is deque in c++ and allows insertion and deletion from both front and end.
 
-TC - O(N) - queue takes O(1) for insertion and deletion from front and end.
-SC - O(k) - At max , k elements are present in queue.
+// TC - O(N) - queue takes O(1) for insertion and deletion from front and end.
+// SC - O(k) - At max , k elements are present in queue.
 
-1. Take first window of size k and for every index i , keep removing index from back of queue till nums[dq.back()] < nums[i]. Then push index i to queue.
-2. After first window is done , push nums[dq.front()] to ans vector.
-3. Loop from i = k to i = n-1.
-4. In every iteration , check if index of first element of previous window is present at front of queue and if its present , pop from front of queue.
-   keep removing index from back of queue till nums[dq.back()] < nums[i]. Then push index i to queue.
-   Push index at the front of queue to ans vector.
+// 1. Take first window of size k and for every index i , keep removing index from back of queue till nums[dq.back()] < nums[i]. Then push index i to queue.
+// 2. After first window is done , push nums[dq.front()] to ans vector.
+// 3. Loop from i = k to i = n-1.
+// 4. In every iteration , check if index of first element of previous window is present at front of queue and if its present , pop from front of queue.
+//    keep removing index from back of queue till nums[dq.back()] < nums[i]. Then push index i to queue.
+//    Push index at the front of queue to ans vector.
 
 class Solution
 {
